@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.paulabetancur.sesion1.Sesion1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registro"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fuchsia"
+                android:textSize="20sp"
+                android:hint="@string/nombre"
+                android:layout_gravity="center"
+                android:id="@+id/eNombre"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apellido"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fuchsia"
+                android:textSize="20sp"
+                android:hint="@string/apellido"
+                android:id="@+id/eApellido"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fuchsia"
+                android:textSize="20sp"
+                android:hint="@string/mail"
+                android:inputType="textPersonName"
+                android:id="@+id/eMail"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fuchsia"
+                android:textSize="20sp"
+                android:hint="@string/telefono"
+                android:inputType="text|phone"
+                android:id="@+id/eTelefono"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ciudad"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+
+            <Spinner
+                android:id="@+id/sCiudades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rMasculino"
+                android:text="@string/masculino"
+                android:checked="true"
+                />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rFemenino"
+                android:text="@string/femenino"
+                />
+
+        </RadioGroup>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cine"
+                android:id="@+id/cCine"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/comer"
+                android:id="@+id/cComer"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dormir"
+                android:id="@+id/cDormir"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bailar"
+                android:id="@+id/cBailar"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registrar"
+            android:textAllCaps="false"
+            android:background="@color/pink"
+            android:textSize="20sp"
+            android:id="@+id/bRegistrar"
+            android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:text="@string/informacion"
+            android:textColor="@color/black"
+            android:id="@+id/tInfo"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+
