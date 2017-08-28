@@ -256,6 +256,7 @@
             android:textColor="@color/black"
             android:id="@+id/tInfo"
             />
+        </LinearLayout>
 
     </LinearLayout>
 
